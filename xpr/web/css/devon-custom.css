@@ -3,8 +3,9 @@ h1 {
 }
 
 .demo-code {
-    max-width:400px;
-    max-height:500px;
+    font-size: 0.5em;
+    max-width:600px;
+    max-height:350px;
     overflow-x: scroll;
     overflow-y: scroll;
 }
