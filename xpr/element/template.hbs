@@ -23,11 +23,6 @@
                 <li class="pure-menu-item"><a href="#xpr-context" class="pure-menu-link">XPR Context</a></li>
                 <li class="pure-menu-item"><a href="#about-element" class="pure-menu-link">About Element</a></li>
 
-                <li class="pure-menu-item menu-item-divided">
-                    <a href="#" class="pure-menu-link">Services</a>
-                </li>
-
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -49,11 +44,13 @@
             </code>
             </div>
 
-            <h2 class="content-subhead">About Element</h2>
+            <h2 id="about-element" class="content-subhead">About Element</h2>
             {{=<% %>=}}
             <p> Demonstrates using <code>{{{XprElement}}}</code> to pull in an element</p>
             <%={{ }}=%>
             {{{XprElement bundlePath="about"}}}
+
+
             <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
