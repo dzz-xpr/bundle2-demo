@@ -5,4 +5,6 @@ h1 {
 .demo-code {
     max-width:400px;
     max-height:500px;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
