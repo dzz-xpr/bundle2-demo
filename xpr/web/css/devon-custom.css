@@ -10,6 +10,9 @@ h3 {
 
 div .sub-element {
     background-color:#DDD;
+    padding:5px;
+    margin:5px;
+    border-radius:5px;
 }
 
 
