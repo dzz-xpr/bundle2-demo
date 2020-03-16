@@ -8,6 +8,10 @@ h3 {
     font-family:monospace;
 }
 
+div .sub-element {
+    background-color:#DDD;
+}
+
 
 
 .demo-code {
