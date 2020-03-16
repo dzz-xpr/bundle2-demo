@@ -1,0 +1,9 @@
+{
+    "datasources": [
+        {
+            "path" : "articles_by_section",
+            "name" : "PageArticles",
+            "options" : { "ListingSectionId" : 7 }
+        }
+    ]
+}
