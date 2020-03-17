@@ -24,3 +24,7 @@ div .sub-element {
     overflow-x: scroll;
     overflow-y: scroll;
 }
+
+code {
+    color:#28F;
+}
