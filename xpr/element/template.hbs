@@ -38,9 +38,14 @@
 
         <div class="content">
             <h2 id="xpr-context" class="content-subhead">XPR Context</h2>
+            <p> Demonstrates using <code>XprJson</code> helper to dump the <code>xpr</code> variable</p>
+            <p>
             {{=<% %>=}}
-            <p> Demonstrates using <code>{{XprJson}}</code> helper to dump the <code>xpr</code> variable</p>
+            <code>
+            {{{XprJson xpr}}}
+            </code>
             <%={{ }}=%>
+            </p>
             <div class="demo-code">
             <code>
             {{XprJson xpr}}
@@ -52,8 +57,6 @@
             <p> Demonstrates using <code>{{{XprElement}}}</code> to pull in an element</p>
             <%={{ }}=%>
             {{{XprElement bundlePath="about"}}}
-
-
             <h2 id="attached-data" class="content-subhead">Attached Data</h2>
             <p>
                 The element rendering this page <code>(template.hbs)</code> can be viewed in github here: <a href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/template.hbs">xpr/element/template.hbs</a>
