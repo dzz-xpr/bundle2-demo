@@ -126,6 +126,22 @@
             <p>
                 "Sub" Elements can also have their own datasources attached. While it is usually better to "fetch up front and pass down", sometimes you want an element which controls and fetches its own data. Here we demonstrate an element which will fetch an article based on Id, and we will use the <code>PageArticles</code> variable from the previous example to supply the list of Ids. Note that we are "wasting" effort here by refetching from the API, this is just meant as an example of using <code>options</code> to control element behaviour.
             </p>
+
+            <p>
+                These are the files in use that demonstrate how this works:
+                <ul>
+                    <li>
+                        This element configuration file receives the <code>options</code> and passes <code>ArticleId</code> to the downstream datasource: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element_config/details/article_details_fetching.json">xpr/element_config/details/article_details_fetching.json</a>
+                    </li>
+                    <li>
+                        This datasource receives <code>options.ArticleId</code> and uses it to parameterize an API call: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/datasource/details/article_by_id.json">xpr/datasource/details/article_details_fetching.hbs</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/details/article_details_fetching.hbs">xpr/element/details/article_details_fetching.hbs</a>
+                    </li>
+            </p>
+
+        
             <p>
             {{=<% %>=}}
             <code>
