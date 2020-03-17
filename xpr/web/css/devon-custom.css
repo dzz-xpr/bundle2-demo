@@ -16,7 +16,10 @@ div .sub-element {
     border-radius:5px;
 }
 
-
+.devon-small-code {
+    font-size: 0.75em;
+    white-space: pre-wrap;
+}
 
 .demo-code {
     font-size: 0.5em;
