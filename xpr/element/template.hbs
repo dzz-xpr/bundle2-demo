@@ -20,6 +20,7 @@
         <div class="pure-menu">
             <a class="pure-menu-heading" href="#">Bundles 2.0</a>
             <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#entry-point" class="pure-menu-link">Entry Point</a></li>
                 <li class="pure-menu-item"><a href="#xpr-context" class="pure-menu-link">XPR Context</a></li>
                 <li class="pure-menu-item"><a href="#about-element" class="pure-menu-link">About Element</a></li>
                 <li class="pure-menu-item"><a href="#attached-data" class="pure-menu-link">Attached Data</a></li>
@@ -36,7 +37,23 @@
             <p class="sagan-quote">"Imagination will often carry us to worlds that never were. But without it we go nowhere" - Carl Sagan</p>
         </div>
 
+
         <div class="content">
+            <h2 id="entry-point" class="content-subhead">Entry Point</h2>
+
+            <p>
+            This page, like all pages in Expression, is rendered with an <code>Element</code>. An Element is a template written in HBS, combined with a configuration that expresses which datasources to bind to to feed any dynamic elements required to render the page.
+            </p>
+            <p>
+                The element rendering this page <code>(template.hbs)</code> can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/template.hbs">xpr/element/template.hbs</a>
+            </p>
+            <p>
+                The configuration for this element can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element_config/template.hbs">xpr/element_config/template.hbs</a>
+            </p>
+        
+
+
+
             <h2 id="xpr-context" class="content-subhead">XPR Context</h2>
             <p> Demonstrates using <code>XprJson</code> helper to dump the <code>xpr</code> variable</p>
             <p>
