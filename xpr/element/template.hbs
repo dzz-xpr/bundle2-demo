@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="{{{WebRoot xpr.bundle}}}/css/devon-custom.css">
 </head>
 <body>
-
 <div id="layout">
-
     <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <span></span>
     </a>
-
     <div id="menu">
         <div class="pure-menu">
             <a class="pure-menu-heading" href="#">Bundles 2.0</a>
@@ -27,6 +24,8 @@
                 <li class="pure-menu-item"><a href="#attached-data" class="pure-menu-link">Attached Data</a></li>
                 <li class="pure-menu-item"><a href="#context-passing" class="pure-menu-link">Context Passing</a></li>
                 <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">Element Options</a></li>
+                <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">SSJS - Element Attached</a></li>
+                <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">SSJS - Datasource Attached</a></li>
             </ul>
         </div>
     </div>
@@ -162,12 +161,8 @@
             <%={{ }}=%>
             </p>
             {{#each PageArticles}}
-
-            
             {{{XprElement bundlePath="details/article_details_fetching" options.ArticleId=this.Id}}}
             {{/each}}
-
-
         </div>
     </div>
 </div>
