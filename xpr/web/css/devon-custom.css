@@ -29,3 +29,8 @@ div .sub-element {
 code {
     color:#28F;
 }
+
+.gitlab_link img{
+    width: 100px;
+    height: 41px;
+}
