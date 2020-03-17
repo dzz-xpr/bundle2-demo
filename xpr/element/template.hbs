@@ -24,8 +24,8 @@
                 <li class="pure-menu-item"><a href="#attached-data" class="pure-menu-link">Attached Data</a></li>
                 <li class="pure-menu-item"><a href="#context-passing" class="pure-menu-link">Context Passing</a></li>
                 <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">Element Options</a></li>
-                <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">SSJS - Element Attached</a></li>
-                <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">SSJS - Datasource Attached</a></li>
+                <li class="pure-menu-item"><a href="#ssjs-binding" class="pure-menu-link">SSJS - Simple Binding</a></li>
+                <!-- <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">SSJS - Datasource Attached</a></li> -->
             </ul>
         </div>
     </div>
@@ -44,6 +44,9 @@
 
 
         <div class="content">
+            <!---------------------------------------->
+            <!---------------------------------------->
+
             <h2 id="entry-point" class="content-subhead">Entry Point</h2>
 
             <p>
@@ -56,7 +59,8 @@
                 The configuration for this element can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element_config/template.json">xpr/element_config/template.json</a>
             </p>
         
-
+            <!---------------------------------------->
+            <!---------------------------------------->
 
             <h2 id="inline-media" class="content-subhead">Inline Media</h2>
             <img src="{{{WebRoot xpr.bundle}}}/img/cool_room.jpeg"></img>
@@ -77,6 +81,8 @@
             </code>
             </div>
 
+            <!---------------------------------------->
+            <!---------------------------------------->
 
             <h2 id="about-element" class="content-subhead">About Element</h2>
             {{=<% %>=}}
@@ -86,6 +92,10 @@
             </p>
             <%={{ }}=%>
             {{{XprElement bundlePath="about"}}}
+
+            <!---------------------------------------->
+            <!---------------------------------------->
+
             <h2 id="attached-data" class="content-subhead">Attached Data</h2>
             <p>
                 The element rendering this page <code>(template.hbs)</code> can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/template.hbs">xpr/element/template.hbs</a>
@@ -110,6 +120,8 @@
             {{/each}}
             </ul>
 
+            <!---------------------------------------->
+            <!---------------------------------------->
 
             <h2 id="context-passing" class="content-subhead">Context Passing</h2>
             <p>
@@ -131,6 +143,10 @@
             {{{XprElement bundlePath="details/article_details" context.Article=this}}}
             {{/each}}
 
+
+            <!---------------------------------------->
+            <!---------------------------------------->
+
             <h2 id="element-options" class="content-subhead">Element Options</h2>
             <p>
                 "Sub" Elements can also have their own datasources attached. While it is usually better to "fetch up front and pass down", sometimes you want an element which controls and fetches its own data. Here we demonstrate an element which will fetch an article based on Id, and we will use the <code>PageArticles</code> variable from the previous example to supply the list of Ids. Note that we are "wasting" effort here by refetching from the API, this is just meant as an example of using <code>options</code> to control element behaviour.
@@ -150,7 +166,7 @@
                     </li>
             </p>
 
-        
+
             <p>
             {{=<% %>=}}
             <code>
@@ -163,6 +179,15 @@
             {{#each PageArticles}}
             {{{XprElement bundlePath="details/article_details_fetching" options.ArticleId=this.Id}}}
             {{/each}}
+
+            <!---------------------------------------->
+            <!---------------------------------------->
+
+            <h2 id="ssjs-binding" class="content-subhead">SSJS - Simple Binding</h2>
+            <p>
+                Bundles 2.0 SSJS Bindings are a lot more flexible than they used to be. For starters, we're going to render an element which has a datasource binding which has no datasource <code>path</code> and instead, uses the script block to do all data fetching exclusively in SSJS. 
+            </p>
+
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
     "datasources": [
         {
             "__comment" : "Note that there is no 'path' specified for this datasource, in Bundles 2 there is no need to create 'null' adapters when only requiring a script binding",
-            "name" : "SSJS",
+            "name" : "script_output",
             "scripts" : [
                 {
                     "path" : "simple_echo",
