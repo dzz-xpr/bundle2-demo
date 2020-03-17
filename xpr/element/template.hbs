@@ -213,6 +213,13 @@
 }
             </code>
             <h4>Script</h4>
+            <code class="devon-small-code">
+                //this is a "simple echo" JS script to demonstrate binding scripts to elements and datasources.
+                
+                exports.process = function(context, options) {
+                    return options["message"];
+                }
+            </code>
             <%={{ }}=%>
             <h4>Result</h4>
             {{{XprElement bundlePath="details/ssjs" options.message='Hello World!'}}}
