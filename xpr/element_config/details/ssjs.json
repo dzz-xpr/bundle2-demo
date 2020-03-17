@@ -9,7 +9,7 @@
                     "_comment" : "Notice the preceeding / in the path which resolves to the script in /server_js/simple_echo. If the path was set to 'simple_echo' with no preceeding /, it would look for a 'neighbor file' which would be in /server_js/details/simple_echo",
                     "path" : "/simple_echo",
                     "options" : {
-                        "message" : "Hello World from SSJS"
+                        "message" : "{{options.message}}"
                     }
                 }
             ]
