@@ -3,9 +3,7 @@
         {
             "path" : "article_by_id",
             "name" : "Article",
-            "options" : {
-                "ArticleId" : "{{options.ArticleId}}"
-            }
+            "options" : { "ArticleId" : "{{options.ArticleId}}" }
         }
     ]
 }
