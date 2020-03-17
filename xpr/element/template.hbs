@@ -72,6 +72,14 @@
             <p>
                 Elements can have data from the <code>root</code> or <code>parent</code> context passed into them to be rendered. Here we are going to loop over the same data as in the Attached Data context, but instead of rendering each article inline, pass the article to a sub element for rendering.
             </p>
+            <p>
+            {{=<% %>=}}
+            <code>{{{XprElement bundlePath="details/article_details" context.Article=this}}}</code>
+            <%={{ }}=%>
+            </p>
+
+
+
             {{#each PageArticles}}
             {{{XprElement bundlePath="details/article_details" context.Article=this}}}
             {{/each}}
@@ -82,7 +90,7 @@
             </p>
             {{#each PageArticles}}
 
-            <h1>{{this.Id}}</h1>
+            
             {{{XprElement bundlePath="details/article_details_fetching" options.ArticleId=this.Id}}}
             {{/each}}
 
