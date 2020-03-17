@@ -34,3 +34,8 @@ code {
     width: 100px;
     height: 41px;
 }
+
+.sagan-quote {
+    text-color: #DDD;
+    font-style: italic; 
+}
