@@ -26,6 +26,7 @@
                 <li class="pure-menu-item"><a href="#attached-data" class="pure-menu-link">Attached Data</a></li>
                 <li class="pure-menu-item"><a href="#context-passing" class="pure-menu-link">Context Passing</a></li>
                 <li class="pure-menu-item"><a href="#element-options" class="pure-menu-link">Element Options</a></li>
+                <li class="pure-menu-item"><a href="#inline-media" class="pure-menu-link">Inline Media</a></li>
             </ul>
         </div>
     </div>
@@ -156,6 +157,11 @@
             
             {{{XprElement bundlePath="details/article_details_fetching" options.ArticleId=this.Id}}}
             {{/each}}
+
+            <h2 id="inline-media" class="content-subhead">Inline Media</h2>
+            <img src="{{{WebRoot xpr.bundle}}}/img/cool_room.jpeg"></img>
+            <p>Bundles 2.0 can include media. This is great for custom widgets or assets which should be developer managed, rather than client managed.</p>
+
         </div>
     </div>
 </div>
