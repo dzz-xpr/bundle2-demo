@@ -124,7 +124,7 @@
 
             <h2 id="element-options" class="content-subhead">Element Options</h2>
             <p>
-                "Sub" Elements can also have their own datasources attached. While it is usually better to "fetch up front and pass down", sometimes you want an element which controls and fetches its own data. Here we demonstrate an element which will fetch an article based on Id, and we will use the <code>PageArticles</code> variable from the previous example to supply the list of Ids.
+                "Sub" Elements can also have their own datasources attached. While it is usually better to "fetch up front and pass down", sometimes you want an element which controls and fetches its own data. Here we demonstrate an element which will fetch an article based on Id, and we will use the <code>PageArticles</code> variable from the previous example to supply the list of Ids. Note that we are "wasting" effort here by refetching from the API, this is just meant as an example of using <code>options</code> to control element behaviour.
             </p>
             <p>
             {{=<% %>=}}
@@ -140,9 +140,6 @@
             
             {{{XprElement bundlePath="details/article_details_fetching" options.ArticleId=this.Id}}}
             {{/each}}
-
-
-
         </div>
     </div>
 </div>
