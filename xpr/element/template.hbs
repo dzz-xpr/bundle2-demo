@@ -19,12 +19,11 @@
     <div id="menu">
         <div class="pure-menu">
             <a class="pure-menu-heading" href="#">Bundles 2.0</a>
-
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="#xpr-context" class="pure-menu-link">XPR Context</a></li>
                 <li class="pure-menu-item"><a href="#about-element" class="pure-menu-link">About Element</a></li>
                 <li class="pure-menu-item"><a href="#attached-data" class="pure-menu-link">Attached Data</a></li>
-
+                <li class="pure-menu-item"><a href="#context-passing" class="pure-menu-link">Context Passing</a></li>
             </ul>
         </div>
     </div>
@@ -60,7 +59,6 @@
 
             <p>An element's configuration includes the datasources attached, and any options to configure those datasources. In the case of this <code>template</code> element, we have a datasource attached which uses the <code>datasource/articles_by_section.json</code> datasource to populate the variable <code>PageArticles</code> for this element.
 
-
             <h3>Example of Dynamic Article Data</h3>
             <ul>
             {{#each PageArticles}}
@@ -69,11 +67,13 @@
             </ul>
 
 
-
-            <h2 class="content-subhead">Try Resizing your Browser</h2>
+            <h2 id="context-passing" class="content-subhead">Context Passing</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Elements can have data from the <code>root</code> or <code>parent</code> context passed into them to be rendered. Here we are going to loop over the same data as in the Attached Data context, but instead of rendering each article inline, pass the article to a sub element for rendering.
             </p>
+            {{#each PageArticles}}
+            {{{XprElement bundlePath="details/article_details.hbs" context.Article=this}}}
+            {{/each}}
         </div>
     </div>
 </div>
