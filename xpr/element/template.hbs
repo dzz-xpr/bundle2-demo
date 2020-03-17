@@ -61,6 +61,13 @@
             <p>An element's configuration includes the datasources attached, and any options to configure those datasources. In the case of this <code>template</code> element, we have a datasource attached which uses the <code>datasource/articles_by_section.json</code> datasource to populate the variable <code>PageArticles</code> for this element.
 
             <h3>Example of Dynamic Article Data</h3>
+            {{=<% %>=}}
+            <code>
+            {{#each PageArticles}}
+                <li>{{Title}}</li>
+            {{/each}}
+            </code>
+            <%={{ }}=%>
             <ul>
             {{#each PageArticles}}
             <li>{{Title}}</li>
@@ -74,7 +81,11 @@
             </p>
             <p>
             {{=<% %>=}}
-            <code>{{{XprElement bundlePath="details/article_details" context.Article=this}}}</code>
+            <code>
+            {{#each PageArticles}}
+                {{{XprElement bundlePath="details/article_details" context.Article=this}}}
+            {{/each}}
+            </code>
             <%={{ }}=%>
             </p>
 
