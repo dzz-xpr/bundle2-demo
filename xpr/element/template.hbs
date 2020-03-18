@@ -141,8 +141,6 @@
             <%={{ }}=%>
             </p>
 
-
-
             {{#each PageArticles}}
             {{{XprElement bundlePath="details/article_details" context.Article=this}}}
             {{/each}}
@@ -166,7 +164,8 @@
                         This datasource receives <code>options.ArticleId</code> and uses it to parameterize an API call: {{{XprElement bundlePath="git_link" options.path="xpr/datasource/details/article_by_id.json"}}}
                     </li>
                     <li>
-                        Finally, this template renders the result of the datasource: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/details/article_details_fetching.hbs">xpr/element/details/article_details_fetching.hbs</a>
+                        {{{XprElement bundlePath="git_link
+                        Finally, this template renders the result of the datasource: {{{XprElement bundlePath="git_link" options.path="xpr/element/details/article_details_fetching.hbs"}}}
                     </li>
             </p>
 
@@ -197,6 +196,7 @@
             {{{XprElement bundlePath="details/ssjs" options.message='Hello World!'}}}
             </code>
             <h4>Element Configuration</h4>
+            {{{XprElement bundlePath="git_link" options.path="xpr/element_config/ssjs"}}}
             <code class="devon-small-code">
 {
     "datasources": [
