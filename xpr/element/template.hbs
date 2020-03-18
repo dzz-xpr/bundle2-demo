@@ -92,7 +92,7 @@
             {{=<% %>=}}
             <p> Demonstrates using <code>{{{XprElement}}}</code> to pull in an element</p>
             <p>
-                The code for this element <code>(about.hbs)</code> can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/about.hbs">xpr/element/about.hbs</a>
+                The code for this element <code>(about.hbs)</code> can be viewed in github here: {{{XprElement bundlePath="git_link" options.path="xpr/element/details/about.hbs"}}}
             </p>
             <%={{ }}=%>
             {{{XprElement bundlePath="about"}}}
@@ -102,10 +102,10 @@
 
             <h2 id="attached-data" class="content-subhead">Attached Data</h2>
             <p>
-                The element rendering this page <code>(template.hbs)</code> can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element/template.hbs">xpr/element/template.hbs</a>
+                The element rendering this page <code>(template.hbs)</code> can be viewed in github here: {{{XprElement bundlePath="git_link" options.path="xpr/element/template.hbs"}}}
             </p>
             <p>
-                The configuration for this element can be viewed in github here: <a target="_blank" href="https://github.com/dzz-xpr/bundle2-demo/blob/master/xpr/element_config/template.json">xpr/element_config/template.json</a>
+                The configuration for this element can be viewed in github here: {{{XprElement bundlePath="git_link" options.path="xpr/element_config/template.json"}}}
             </p>
 
             <p>An element's configuration includes the datasources attached, and any options to configure those datasources. In the case of this <code>template</code> element, we have a datasource attached which uses the <code>datasource/articles_by_section.json</code> datasource to populate the variable <code>PageArticles</code> for this element.
