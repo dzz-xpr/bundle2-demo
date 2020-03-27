@@ -1,4 +1,10 @@
 {
+
+    "options" : {
+        "template" : true,
+        "skin" : true
+
+    },
     "datasources": [
         {
             "path" : "articles_by_section",
