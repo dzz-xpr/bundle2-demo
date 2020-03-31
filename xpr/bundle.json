@@ -9,5 +9,10 @@
         } 
     ],
     "skins" : [
+        {
+            "name" : "Bundles 2.0 Sample Skin",
+            "element" : "skin",
+            "options" : {} 
+        }
     ]
 }
